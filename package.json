@@ -1,0 +1,30 @@
+{
+  "name": "LightsOn",
+  "displayName": "LightsOn",
+  "version": "1.0.0",
+  "description": "A simple solitare game to turn on all of the lights",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf www/*; cd LightsOn; ng build --prod --base-href . --output-path ../www; cd .."
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "cordova-ios": "^5.1.1"
+  },
+  "devDependencies": {
+    "cordova-plugin-whitelist": "^1.3.4"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {}
+    },
+    "platforms": [
+      "ios"
+    ]
+  }
+}
