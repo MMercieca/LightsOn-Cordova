@@ -1,1 +1,8 @@
-<p>posts works!</p>
+<div *ngFor="let post of posts" class="post">
+    <img class="image" [src]="post.image" />
+    <div class="summary">
+        <h2>{{post.title}}</h2>
+        <p>{{post.summary}}</p>
+        <a [href]="post.url" class="link" target="_blank">Read more...</a>
+    </div>
+</div>
