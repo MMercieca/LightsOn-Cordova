@@ -19,6 +19,10 @@
         <param name="ios-package" value="CDVGestureHandler" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="StatusBar">
+        <param name="ios-package" value="CDVStatusBar" />
+        <param name="onload" value="true" />
+    </feature>
     <name>LightsOn</name>
     <description>
         A reimplementation of the lights out game
@@ -38,7 +42,7 @@
     <allow-intent href="itms-apps:*" />
     <preference name="AllowInlineMediaPlayback" value="false" />
     <preference name="BackupWebStorage" value="cloud" />
-    <preference name="DisallowOverscroll" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
     <preference name="EnableViewportScale" value="false" />
     <preference name="KeyboardDisplayRequiresUserAction" value="true" />
     <preference name="MediaPlaybackRequiresUserAction" value="false" />
@@ -50,4 +54,6 @@
     <preference name="PaginationBreakingMode" value="page" />
     <preference name="PaginationMode" value="unpaginated" />
     <preference name="BackgroundColor" value="0xff000000" />
+    <preference name="StatusBarOverlaysWebView" value="true" />
+    <preference name="StatusBarStyle" value="lightcontent" />
 </widget>
