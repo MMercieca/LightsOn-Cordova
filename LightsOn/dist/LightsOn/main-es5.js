@@ -28,7 +28,40 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<style>\n</style>\n\n<div>\nContent goes here  \n</div>\n\n<router-outlet></router-outlet>");
+            /* harmony default export */ __webpack_exports__["default"] = ("<app-nav-bar></app-nav-bar>\n<router-outlet></router-outlet>");
+            /***/ 
+        }),
+        /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/homepage/homepage.component.html": 
+        /*!****************************************************************************************!*\
+          !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/homepage/homepage.component.html ***!
+          \****************************************************************************************/
+        /*! exports provided: default */
+        /***/ (function (module, __webpack_exports__, __webpack_require__) {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            /* harmony default export */ __webpack_exports__["default"] = ("<nav class=\"button\">\n    <a routerLink=\"/posts\">See Blog Posts by Matt</a>\n</nav>\n");
+            /***/ 
+        }),
+        /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/nav-bar/nav-bar.component.html": 
+        /*!**************************************************************************************!*\
+          !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/nav-bar/nav-bar.component.html ***!
+          \**************************************************************************************/
+        /*! exports provided: default */
+        /***/ (function (module, __webpack_exports__, __webpack_require__) {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            /* harmony default export */ __webpack_exports__["default"] = ("<div id=\"nav-bar-container\">\n    <div class=\"go-back\">&lt;</div>\n    <h1>Lights On</h1>\n    <div class=\"go-right\"></div>\n</div>");
+            /***/ 
+        }),
+        /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/posts/posts.component.html": 
+        /*!**********************************************************************************!*\
+          !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/posts/posts.component.html ***!
+          \**********************************************************************************/
+        /*! exports provided: default */
+        /***/ (function (module, __webpack_exports__, __webpack_require__) {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            /* harmony default export */ __webpack_exports__["default"] = ("<p>posts works!</p>\n");
             /***/ 
         }),
         /***/ "./node_modules/tslib/tslib.es6.js": 
@@ -343,7 +376,13 @@
             /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
             /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
             /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
-            var routes = [];
+            /* harmony import */ var _posts_posts_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./posts/posts.component */ "./src/app/posts/posts.component.ts");
+            /* harmony import */ var _homepage_homepage_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./homepage/homepage.component */ "./src/app/homepage/homepage.component.ts");
+            var routes = [
+                { path: '', redirectTo: '/home', pathMatch: 'full' },
+                { path: 'home', component: _homepage_homepage_component__WEBPACK_IMPORTED_MODULE_4__["HomepageComponent"] },
+                { path: 'posts', component: _posts_posts_component__WEBPACK_IMPORTED_MODULE_3__["PostsComponent"] }
+            ];
             var AppRoutingModule = /** @class */ (function () {
                 function AppRoutingModule() {
                 }
@@ -408,6 +447,9 @@
             /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
             /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
             /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+            /* harmony import */ var _posts_posts_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./posts/posts.component */ "./src/app/posts/posts.component.ts");
+            /* harmony import */ var _homepage_homepage_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./homepage/homepage.component */ "./src/app/homepage/homepage.component.ts");
+            /* harmony import */ var _nav_bar_nav_bar_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./nav-bar/nav-bar.component */ "./src/app/nav-bar/nav-bar.component.ts");
             var AppModule = /** @class */ (function () {
                 function AppModule() {
                 }
@@ -416,7 +458,10 @@
             AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
                 Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
                     declarations: [
-                        _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]
+                        _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"],
+                        _posts_posts_component__WEBPACK_IMPORTED_MODULE_5__["PostsComponent"],
+                        _homepage_homepage_component__WEBPACK_IMPORTED_MODULE_6__["HomepageComponent"],
+                        _nav_bar_nav_bar_component__WEBPACK_IMPORTED_MODULE_7__["NavBarComponent"]
                     ],
                     imports: [
                         _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -426,6 +471,120 @@
                     bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
                 })
             ], AppModule);
+            /***/ 
+        }),
+        /***/ "./src/app/homepage/homepage.component.sass": 
+        /*!**************************************************!*\
+          !*** ./src/app/homepage/homepage.component.sass ***!
+          \**************************************************/
+        /*! exports provided: default */
+        /***/ (function (module, __webpack_exports__, __webpack_require__) {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            /* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2hvbWVwYWdlL2hvbWVwYWdlLmNvbXBvbmVudC5zYXNzIn0= */");
+            /***/ 
+        }),
+        /***/ "./src/app/homepage/homepage.component.ts": 
+        /*!************************************************!*\
+          !*** ./src/app/homepage/homepage.component.ts ***!
+          \************************************************/
+        /*! exports provided: HomepageComponent */
+        /***/ (function (module, __webpack_exports__, __webpack_require__) {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomepageComponent", function () { return HomepageComponent; });
+            /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+            /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+            var HomepageComponent = /** @class */ (function () {
+                function HomepageComponent() {
+                }
+                HomepageComponent.prototype.ngOnInit = function () {
+                };
+                return HomepageComponent;
+            }());
+            HomepageComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+                Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+                    selector: 'app-homepage',
+                    template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./homepage.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/homepage/homepage.component.html")).default,
+                    styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./homepage.component.sass */ "./src/app/homepage/homepage.component.sass")).default]
+                })
+            ], HomepageComponent);
+            /***/ 
+        }),
+        /***/ "./src/app/nav-bar/nav-bar.component.sass": 
+        /*!************************************************!*\
+          !*** ./src/app/nav-bar/nav-bar.component.sass ***!
+          \************************************************/
+        /*! exports provided: default */
+        /***/ (function (module, __webpack_exports__, __webpack_require__) {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            /* harmony default export */ __webpack_exports__["default"] = ("#nav-bar-container {\n  background-color: #26547C;\n  color: #FFFCF9;\n  display: flex;\n  flex-direction: flex-row;\n  width: 100%;\n  padding: 5px 10px 5px 10px;\n  margin: 0;\n  margin-bottom: 20px;\n  text-align: center;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9tZXJjaWVjYS9Mb2NhbC1Qcm9qZWN0cy9MaWdodHNPbi9MaWdodHNPbi9zcmMvYXBwL25hdi1iYXIvbmF2LWJhci5jb21wb25lbnQuc2FzcyIsIi9Vc2Vycy9tZXJjaWVjYS9Mb2NhbC1Qcm9qZWN0cy9MaWdodHNPbi9MaWdodHNPbi9zcmMvdmFyaWFibGVzLnNhc3MiLCJzcmMvYXBwL25hdi1iYXIvbmF2LWJhci5jb21wb25lbnQuc2FzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFFQTtFQUNJLHlCQ0hHO0VESUgsY0FBQTtFQUNBLGFBQUE7RUFDQSx3QkFBQTtFQUNBLFdBQUE7RUFDQSwwQkFBQTtFQUNBLFNBQUE7RUFDQSxtQkFBQTtFQUNBLGtCQUFBO0FFREoiLCJmaWxlIjoic3JjL2FwcC9uYXYtYmFyL25hdi1iYXIuY29tcG9uZW50LnNhc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAaW1wb3J0ICcuLi8uLi92YXJpYWJsZXMnXG5cbiNuYXYtYmFyLWNvbnRhaW5lclxuICAgIGJhY2tncm91bmQtY29sb3I6ICRibHVlXG4gICAgY29sb3I6ICRvZmZXaGl0ZVxuICAgIGRpc3BsYXk6IGZsZXhcbiAgICBmbGV4LWRpcmVjdGlvbjogZmxleC1yb3dcbiAgICB3aWR0aDogMTAwJVxuICAgIHBhZGRpbmc6IDVweCAxMHB4IDVweCAxMHB4XG4gICAgbWFyZ2luOiAwXG4gICAgbWFyZ2luLWJvdHRvbTogMjBweFxuICAgIHRleHQtYWxpZ246IGNlbnRlclxuIiwiJGJsdWU6ICMyNjU0N0NcbiRpbmZyYVJlZDogI0VGNDc2RlxuJG9yYW5nZVllbGxvdzogI0ZGRDE2NlxuJGdyZWVuOiAjMDZENkEwXG4kb2ZmV2hpdGU6ICNGRkZDRjkiLCIjbmF2LWJhci1jb250YWluZXIge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjMjY1NDdDO1xuICBjb2xvcjogI0ZGRkNGOTtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGZsZXgtcm93O1xuICB3aWR0aDogMTAwJTtcbiAgcGFkZGluZzogNXB4IDEwcHggNXB4IDEwcHg7XG4gIG1hcmdpbjogMDtcbiAgbWFyZ2luLWJvdHRvbTogMjBweDtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufSJdfQ== */");
+            /***/ 
+        }),
+        /***/ "./src/app/nav-bar/nav-bar.component.ts": 
+        /*!**********************************************!*\
+          !*** ./src/app/nav-bar/nav-bar.component.ts ***!
+          \**********************************************/
+        /*! exports provided: NavBarComponent */
+        /***/ (function (module, __webpack_exports__, __webpack_require__) {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NavBarComponent", function () { return NavBarComponent; });
+            /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+            /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+            var NavBarComponent = /** @class */ (function () {
+                function NavBarComponent() {
+                }
+                NavBarComponent.prototype.ngOnInit = function () {
+                };
+                return NavBarComponent;
+            }());
+            NavBarComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+                Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+                    selector: 'app-nav-bar',
+                    template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./nav-bar.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/nav-bar/nav-bar.component.html")).default,
+                    styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./nav-bar.component.sass */ "./src/app/nav-bar/nav-bar.component.sass")).default]
+                })
+            ], NavBarComponent);
+            /***/ 
+        }),
+        /***/ "./src/app/posts/posts.component.sass": 
+        /*!********************************************!*\
+          !*** ./src/app/posts/posts.component.sass ***!
+          \********************************************/
+        /*! exports provided: default */
+        /***/ (function (module, __webpack_exports__, __webpack_require__) {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            /* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3Bvc3RzL3Bvc3RzLmNvbXBvbmVudC5zYXNzIn0= */");
+            /***/ 
+        }),
+        /***/ "./src/app/posts/posts.component.ts": 
+        /*!******************************************!*\
+          !*** ./src/app/posts/posts.component.ts ***!
+          \******************************************/
+        /*! exports provided: PostsComponent */
+        /***/ (function (module, __webpack_exports__, __webpack_require__) {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PostsComponent", function () { return PostsComponent; });
+            /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+            /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+            var PostsComponent = /** @class */ (function () {
+                function PostsComponent() {
+                }
+                PostsComponent.prototype.ngOnInit = function () {
+                };
+                return PostsComponent;
+            }());
+            PostsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+                Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+                    selector: 'app-posts',
+                    template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./posts.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/posts/posts.component.html")).default,
+                    styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./posts.component.sass */ "./src/app/posts/posts.component.sass")).default]
+                })
+            ], PostsComponent);
             /***/ 
         }),
         /***/ "./src/environments/environment.ts": 
