@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ApplicationProperties</key>
+	<dict>
+		<key>ApplicationPath</key>
+		<string>Applications/LightsOn.app</string>
+		<key>CFBundleIdentifier</key>
+		<string>com.mattmercieca.lightson</string>
+		<key>CFBundleShortVersionString</key>
+		<string>1.0.0</string>
+		<key>CFBundleVersion</key>
+		<string>1.0.0</string>
+		<key>SigningIdentity</key>
+		<string>Apple Development: mercieca@gmail.com (92J6EP884W)</string>
+		<key>Team</key>
+		<string>4S52AFNYYG</string>
+	</dict>
+	<key>ArchiveVersion</key>
+	<integer>2</integer>
+	<key>CreationDate</key>
+	<date>2019-12-14T04:04:49Z</date>
+	<key>Name</key>
+	<string>LightsOn</string>
+	<key>SchemeName</key>
+	<string>LightsOn</string>
+</dict>
+</plist>

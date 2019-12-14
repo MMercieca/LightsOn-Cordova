@@ -4,3 +4,9 @@
       (click)="onPress(row, col)">
     </div>
 </div>
+<div *ngIf="isWon" class="congrats">
+    <h1 class="banner">You Won!</h1>
+    <nav class="button">
+        <a routerLink="/home">OK</a>
+    </nav>
+</div>

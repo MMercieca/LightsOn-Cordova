@@ -6,6 +6,7 @@ import { Router, ActivatedRoute } from '@angular/router';
   templateUrl: './game-board.component.html',
   styleUrls: ['./game-board.component.sass']
 })
+
 export class GameBoardComponent implements OnInit {
   board: boolean[][];
   size: number;
@@ -79,11 +80,10 @@ export class GameBoardComponent implements OnInit {
 
   onPress(row, col) {
     this.switch(row, col);
+  }
 
-    if (this.isWon) {
-      alert("Congratulations!");
-      this.router.navigateByUrl('/home');
-    }
+  goHome() {
+    this.router.navigateByUrl('/home');
   }
 
   randomMove() {

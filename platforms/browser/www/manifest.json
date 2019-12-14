@@ -1,0 +1,12 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "LightsOn",
+  "short_name": "LightsOn",
+  "version": "com.mattmercieca.lightson",
+  "description": "A reimplementation of the lights out game",
+  "author": "Matt Mercieca",
+  "icons": [],
+  "start_url": "index.html",
+  "theme_color": "#26547C"
+}
