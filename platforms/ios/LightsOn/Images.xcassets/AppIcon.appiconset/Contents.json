@@ -3,91 +3,91 @@
     {
       "size" : "20x20",
       "idiom" : "iphone",
-      "filename" : "icon-20@2x.png",
+      "filename" : "icon-40x40.png",
       "scale" : "2x"
     },
     {
       "size" : "20x20",
       "idiom" : "iphone",
-      "filename" : "icon-20@3x.png",
+      "filename" : "icon-60x60.png",
       "scale" : "3x"
     },
     {
       "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "icon-29.png",
+      "filename" : "icon-29x29.png",
       "scale" : "1x"
     },
     {
       "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "icon-29@2x.png",
+      "filename" : "icon-58x58-1.png",
       "scale" : "2x"
     },
     {
       "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "icon-29@3x.png",
+      "filename" : "icon-87x87.png",
       "scale" : "3x"
     },
     {
       "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "icon-40@2x.png",
+      "filename" : "icon-80x80.png",
       "scale" : "2x"
     },
     {
       "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "icon-60@2x.png",
+      "filename" : "icon-120x120.png",
       "scale" : "3x"
     },
     {
       "size" : "57x57",
       "idiom" : "iphone",
-      "filename" : "icon.png",
+      "filename" : "icon-57x57.png",
       "scale" : "1x"
     },
     {
       "size" : "57x57",
       "idiom" : "iphone",
-      "filename" : "icon@2x.png",
+      "filename" : "icon-114x114.png",
       "scale" : "2x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "icon-60@2x.png",
+      "filename" : "icon-120x120-1.png",
       "scale" : "2x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "icon-60@3x.png",
+      "filename" : "icon-180x180.png",
       "scale" : "3x"
     },
     {
       "size" : "20x20",
       "idiom" : "ipad",
-      "filename" : "icon-20.png",
+      "filename" : "icon-20x20.png",
       "scale" : "1x"
     },
     {
       "size" : "20x20",
       "idiom" : "ipad",
-      "filename" : "icon-20@2x.png",
+      "filename" : "icon-40x40-2.png",
       "scale" : "2x"
     },
     {
       "size" : "29x29",
       "idiom" : "ipad",
-      "filename" : "icon-29.png",
+      "filename" : "icon-29x29-1.png",
       "scale" : "1x"
     },
     {
       "size" : "29x29",
       "idiom" : "ipad",
-      "filename" : "icon-29@2x.png",
+      "filename" : "icon-58x58-2.png",
       "scale" : "2x"
     },
     {
