@@ -44,7 +44,7 @@ export class GameBoardComponent implements OnInit {
     } else {
       classes.push('off');
     }
-    
+
     return classes;
   }
 
@@ -90,7 +90,6 @@ export class GameBoardComponent implements OnInit {
     let row = Math.floor(Math.random() * this.size);
     let col = Math.floor(Math.random() * this.size);
     
-    console.log(row, col);
     this.switch(row, col);
   }
 
