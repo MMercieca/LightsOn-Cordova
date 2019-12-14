@@ -1,6 +1,12 @@
 <div class="content">
     <nav class="button">
-        <a routerLink="/game">Play Game</a>
+        <a [routerLink]="['/game', 5, 5]">Play Easy Game</a>
+    </nav>
+    <nav class="button">
+        <a [routerLink]="['/game', 5, 10]">Play Medium Game</a>
+    </nav>
+    <nav class="button">
+        <a [routerLink]="['/game', 7, 10]">Play Hard Game</a>
     </nav>
     <nav class="button">
         <a routerLink="/posts">See Blog Posts by Matt</a>

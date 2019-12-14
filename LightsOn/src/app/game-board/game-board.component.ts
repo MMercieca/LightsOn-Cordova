@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-game-board',
@@ -10,22 +10,42 @@ export class GameBoardComponent implements OnInit {
   board: boolean[][];
   size: number;
   moves: number;
+  boardSize: Array<number>;
+  subscrption: any;
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit() {
-    this.size = 5;
-    this.moves = 5;
-    
-    this.reset();
+    this.subscrption = this.route.params.subscribe(params => {
+      this.size = +params['size'];
+      this.moves = +params['moves'];
+  
+      this.boardSize = new Array<number>();
+      for (let i = 0; i < this.size; i++) {
+        this.boardSize[i] = i;
+      }
+
+      this.reset();
+    })
   }
 
-  isOn(row, col) {
-    if (this.board[row][col]) {
-      return "on";
-    } else {
-      return "off";
+  ngOnDestroy() {
+    this.subscrption.unsubscribe();
+  }
+
+  classesFor(row, col) {
+    let classes = [];
+    if (this.size == 7) {
+      classes.push('seven');
     }
+
+    if (this.board[row][col]) {
+      classes.push('on');
+    } else {
+      classes.push('off');
+    }
+    
+    return classes;
   }
 
   get isWon() {

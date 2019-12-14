@@ -1,6 +1,6 @@
-<div class="row" *ngFor="let row of [0, 1, 2, 3, 4]">
-    <div class="col" *ngFor="let col of [0, 1, 2, 3, 4]" 
-      [ngClass]="isOn(row, col)"
+<div class="row" *ngFor="let row of boardSize">
+    <div class="col" *ngFor="let col of boardSize" 
+      [ngClass]="classesFor(row, col)"
       (click)="onPress(row, col)">
     </div>
 </div>
